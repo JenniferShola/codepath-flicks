@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: posterImageView.frame.size.height)
+        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: posterImageView.frame.size.height - 40)
         contentView.layer.cornerRadius = 10;
         
         let title = movie.value(forKey: "title") as! String
